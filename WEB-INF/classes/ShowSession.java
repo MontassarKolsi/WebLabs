@@ -20,8 +20,12 @@ public class ShowSession extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         HttpSession session = request.getSession();
-
-        Integer count = (Integer) session.getAttribute("visitCount");
+        Integer count;
+        try {
+            count = (Integer) session.getAttribute("visitCount");
+        } catch (ClassCastException e) {
+            count = null;
+        }
         if (count == null) {
             count = 1;
         } else {
