@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1 - Person Form</title>
+</head>
+
+<body>
+    <h2>Person Information</h2>
+
+    <form action="FormServlet" method="post">
+        <label>First name:</label>
+        <input type="text" name="firstName" required>
+        <br><br>
+
+        <label>Last name:</label>
+        <input type="text" name="lastName" required>
+        <br><br>
+
+        <label>Birth date (mm/dd/yyyy):</label>
+        <input type="text" name="birthDate" placeholder="mm/dd/yyyy" required>
+        <br><br>
+
+        <label>Sex:</label>
+        <input type="radio" name="sex" value="Male" required> Male
+        <input type="radio" name="sex" value="Female"> Female
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+
+        <p>
+            <a href="ReadCookie">Read saved cookies</a>
+        </p>
+
+        <p>
+            <a href="CountVisits">Count my visits</a>
+        </p>
+    </form>
+</body>
+
+</html>
