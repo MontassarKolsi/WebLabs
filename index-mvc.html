@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Person Information</title>
+</head>
+<body>
+    <h2>Enter Your Information</h2>
+
+    <form action="Controller" method="post">
+
+        <label>First name:</label>
+        <input type="text" name="firstName" required>
+        <br><br>
+
+        <label>Last name:</label>
+        <input type="text" name="lastName" required>
+        <br><br>
+
+        <label>Birth date:</label>
+        <input type="date" name="birthDay" required>
+        <br><br>
+
+        <label>Sex:</label>
+        <input type="radio" name="sex" value="Male" required>
+        Male
+
+        <input type="radio" name="sex" value="Female">
+        Female
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
